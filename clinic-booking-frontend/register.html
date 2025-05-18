@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Online Clinic Booking</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="forgot-password.html">Forgot Password</a>
+    </nav>
+    <div class="container">
+        <h2>Register</h2>
+        <form onsubmit="register(event)">
+            <div class="form-group">
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
