@@ -1,0 +1,127 @@
+.manage-users {
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  color: #1e293b;
+}
+
+.manage-users h2 {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 20px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background-color: #334155;
+  color: white;
+}
+
+tbody tr:hover {
+  background-color: #f0f9ff;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+.card-users,
+.card-active,
+.card-newUsers,
+.card-totalAdmins {
+  background-color: white;       
+  color: black;                 
+  border: 2px solid #60a5fa;     
+  box-shadow: none;              
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.bottom-section {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+
+.statistics {
+  flex: 2;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+
+.quick-links {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.quick-links h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links ul li {
+  padding: 10px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: color 0.3s;
+}
+
+.quick-links ul li:hover {
+  color: #3b82f6; 
+}
+.stats-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.add-user-btn {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.add-user-btn:hover {
+  background-color: #1e40af;
+}

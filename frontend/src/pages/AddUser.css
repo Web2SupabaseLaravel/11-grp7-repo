@@ -1,0 +1,50 @@
+.add-user-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9fafb;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.add-user-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-user-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.add-user-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.add-user-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-user-container button:hover {
+  background-color: #2563eb;
+}
+
+/* الرسالة */
+.message {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}

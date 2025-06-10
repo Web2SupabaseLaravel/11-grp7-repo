@@ -1,0 +1,98 @@
+.system-settings {
+  padding: 30px;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb; 
+  min-height: 100vh;
+  color: #111827; 
+}
+
+.system-settings h2 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 420px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
+  margin-left: 50px; 
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 16px;
+  color: #374151;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  margin-top: 8px;
+  padding: 10px 14px;
+  border: 1.8px solid #d1d5db; 
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+  outline: none;
+  background-color: white; 
+  color: #000; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  border-color: #3b82f6; 
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+
+.checkbox-label {
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  font-weight: 600;
+  font-size: 16px;
+  color: #374151;
+  cursor: pointer;
+  user-select: none;
+  max-width: 150px;
+  padding-right: 35px; 
+}
+
+.checkbox-label input[type="checkbox"] {
+  position: absolute;
+  right: 10px; 
+  bottom: 0;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: white; 
+  background-color: #000; 
+  border: 1.5px solid #ccc; 
+}
+
+button {
+  width: 160px;
+  padding: 12px 20px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
