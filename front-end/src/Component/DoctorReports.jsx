@@ -27,7 +27,6 @@ const DoctorReports = () => {
     fetchReports();
   }, []);
 
-  // فرز المصفوفة حسب report_id تصاعدياً
   const sortedReports = [...reports].sort((a, b) => a.report_id - b.report_id);
 
   return (

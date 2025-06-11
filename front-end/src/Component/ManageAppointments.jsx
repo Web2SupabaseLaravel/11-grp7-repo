@@ -24,7 +24,7 @@ const ManageAppointments = () => {
       try {
         const response = await axios.get("http://127.0.0.1:8000/api/dataappointment");
 
-        // افتراض إن البيانات عبارة عن مصفوفة
+
         if (Array.isArray(response.data)) {
           setAppointments(response.data);
         } else if (response.data?.appointments) {
@@ -51,7 +51,7 @@ const ManageAppointments = () => {
         <div className="search-bar">
           <span className="menu-icon">☰</span>
           <input type="text" placeholder="Hinted search text" className="search-input" />
-          <span className="search-icon">🔍</span>
+          <span className="search-icon"></span>
         </div>
         <button className="new-appointment-btn">New Appointment ➤</button>
       </div>
@@ -81,8 +81,8 @@ const ManageAppointments = () => {
             <tbody>
               {appointments.map((appt) => (
                 <tr key={appt.appointment_id}>
-                  <td>{appt.date}</td>
-                  <td>{appt.time}</td>
+                  <td>{appt.appointment_date}</td>
+                  <td>{appt.appointment_time}</td>
                   <td>{appt.doctor_name || appt.practitioner_name || appt.practitioner_id || "Doctor"}</td>
                   <td>{appt.patient_name || appt.patient_id || "Patient"}</td>
                   <td className={getStatusClass(appt.status)}>{appt.status}</td>

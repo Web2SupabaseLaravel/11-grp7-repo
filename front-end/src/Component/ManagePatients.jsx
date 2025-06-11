@@ -33,7 +33,7 @@ const ManagePatients = () => {
         <div className="search-bar">
           <span className="menu-icon">☰</span>
           <input type="text" placeholder="Search patients..." className="search-input" />
-          <span className="search-icon">🔍</span>
+          <span className="search-icon"></span>
         </div>
 
         <button className="new-patient-btn">New Patient ➤</button>

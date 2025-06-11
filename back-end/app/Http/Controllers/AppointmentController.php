@@ -44,12 +44,11 @@ class AppointmentController extends Controller
     {
             $request->validate([
         'appointment_id' => 'required',
-        'patient_id' => 'required',
-        'practitioner_id' => 'required',
+        'doctor_name' => 'required',
+        'patient_name' => 'required',
         'appointment_date' => 'required',
         'appointment_time' => 'required',
         'status' => 'required',
-        'service_id' => 'required',
     ]);
 
     $inputappointment = new \App\Models\appointment(); 

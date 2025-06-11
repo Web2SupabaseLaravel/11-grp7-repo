@@ -39,11 +39,7 @@ class PatientController extends Controller
         'patient_id' => 'required', 
         'date_of_birth' => 'required', 
         'gender' => 'required', 
-        'password' => 'required', 
-        'address' => 'required', 
         'phone' => 'required', 
-        'email' => 'required', 
-        'last_visit_date' => 'required', 
     ]);
 
     $inputpatient = new \App\Models\patient(); 
